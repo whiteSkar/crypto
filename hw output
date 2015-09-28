@@ -1,0 +1,30 @@
+Of Bilbos later advenctures little more need be said here. With the help of the ring he escaped from the orc guards at the gate and rejoined his companions. He used the ring many times on his quest, chiefly for the help of his friends but he kept it secret from them as long as he could. After his return to his home he never spoke of it again to anyone, save gandalf and frodo and no one else in the shire knew of its existence, or so he believed. Only to Frodo did he show the account of his journey that he was writing
+
+
+potential_key = {'A': 'M',
+                 'B': 'K', #
+                 'C': 'O',
+                 'D': 'V', #
+                 'E': 'H',
+                 'F': 'Y', #
+                 'G': 'B', #
+                 'H': 'A',
+                 'I': 'W', #
+                 'J': 'T',
+                 'K': 'F',
+                 'L': 'S',
+                 'M': 'Q', #
+                 'N': 'X', #
+                 'O': 'N',
+                 'P': 'C',
+                 'Q': 'U', #
+                 'R': 'I',
+                 'S': 'D', #
+                 'T': 'Z', #
+                 'U': 'R',
+                 'V': 'E',
+                 'W': 'P', #
+                 'X': 'G', #
+                 'Y': 'J', #
+                 'Z': 'L'
+                 }
