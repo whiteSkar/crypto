@@ -5,7 +5,7 @@ def get_IofC_for_key_length_from_starting_pos(str, key_length, starting_pos):
     total_char_count = ceil((len(str) - starting_pos) / float(key_length))
     frequency = {}
 
-    for i in xrange(starting_pos, len(str), key_length):
+    for i in range(starting_pos, len(str), key_length):
         c = str[i]
         if c in frequency:
             frequency[c] += 1
@@ -13,7 +13,7 @@ def get_IofC_for_key_length_from_starting_pos(str, key_length, starting_pos):
             frequency[c] = 1
     
     index_of_coincidence = 0.0
-    for key, value in frequency.iteritems():
+    for key, value in frequency.items():
         index_of_coincidence += value * (value - 1)
     index_of_coincidence /= total_char_count * (total_char_count - 1)
 
@@ -51,7 +51,7 @@ for c in input:
 output_file = open('frequency_analysis.txt', 'w')
 
 output_file.write("frequency\n")
-for key, value in frequency.iteritems():
+for key, value in frequency.items():
     output_file.write("%s: %d times\t%f percentage\n" % (key, value, value / total_char_count))
 
 output_file.write("\n sorted frequency\n")
@@ -63,7 +63,7 @@ output_file.write("Total character count: %d\n" % total_char_count)
 
 key_length = 1
 output_file.write("\nAVG IofC for each key lengths:\n")
-for iofc in get_avg_IofC(input, len(input) / 2):
+for iofc in get_avg_IofC(input, 30):
     output_file.write("key length: %d -> %s\n" % (key_length, iofc))
     key_length += 1
 
