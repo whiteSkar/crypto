@@ -83,7 +83,7 @@ def crack_helper_proc(prod, target_hash, salt):
         #if total_count.value() % 100000 == 0:
         #    print("pid %d: %d hashes compared. Current word: %s" %(os.getpid(), total_count.value(), word))
         count += 1
-        if count % 10000000 == 0:
+        if count % 100000000 == 0:
             print("pid %d: %d hashes compared. Current word: %s" %(os.getpid(), count, word))
 
         if (sha_out == target_hash):
