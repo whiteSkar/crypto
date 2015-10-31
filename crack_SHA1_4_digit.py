@@ -53,6 +53,7 @@ def crack_helper(prod_tuple, target_hash, salt):
         print("pid %d: %d hashes compared. Current word: %s" %(os.getpid(), total_count.value(), word))
 
     if (sha_out == target_hash):
+        open('sha1_4_crack.txt', 'w').write(word)
         print("Match found: %s %s %s" % (word[len(salt):], target_hash, salt))
         return
 
