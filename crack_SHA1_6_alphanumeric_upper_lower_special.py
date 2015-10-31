@@ -37,6 +37,6 @@ for tuple in product(seed_str, repeat=6):
 
     if (sha_out == target_hash):
         print("Match found: %s %s %s" % (word[len(salt):], target_hash, salt))
-        sys.exit()
+        return
 
 print("No match found")
